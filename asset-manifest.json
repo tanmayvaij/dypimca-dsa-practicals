@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/cryptospy/static/css/main.ff506a8c.css",
+    "main.js": "/cryptospy/static/js/main.c58b1003.js",
+    "index.html": "/cryptospy/index.html",
+    "main.ff506a8c.css.map": "/cryptospy/static/css/main.ff506a8c.css.map",
+    "main.c58b1003.js.map": "/cryptospy/static/js/main.c58b1003.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ff506a8c.css",
+    "static/js/main.c58b1003.js"
+  ]
+}
