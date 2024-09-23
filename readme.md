@@ -48,21 +48,26 @@ print(ages)
 ```python
 num1 = [1, 2, 3, 4]
 num2 = [1, 2]
-num2.extend(num1)
 
 print("List 1 is ", num1)
 print("List 2 is ", num2)
 
-num2.pop(3)
-print("after popping: ", num2)
+num1.append(num2)
+print(num1)
+
+num1[-1].pop(1)
+
+print("after poping: ", num1)
+
 ```
 
 **Output:**
 
 ```
 List 1 is  [1, 2, 3, 4]
-List 2 is  [1, 2, 1, 2, 3, 4]
-after popping:  [1, 2, 1, 3, 4]
+List 2 is  [1, 2]
+[1, 2, 3, 4, [1, 2]]
+after poping:  [1, 2, 3, 4, [1]]
 ```
 
 ### 4. Create a program to count value occurred in list and sort the list in ascending and descending order
