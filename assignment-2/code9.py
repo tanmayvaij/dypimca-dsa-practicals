@@ -1,4 +1,4 @@
-# Create a array with numeric values and print all values with the help of for loop
+# Create an array with numeric values and print all values with the help of for loop
 
 from array import array
 
