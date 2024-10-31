@@ -1,5 +1,12 @@
 class Node:
-    pass
+
+    def __init__(self, data):
+        self.data = data
+        self.next = None
 
 class SinglyLinkedList:
-    pass
+
+    def __init__(self):
+        self.head = None
+        self.tail = None
+
