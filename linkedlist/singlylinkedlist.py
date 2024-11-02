@@ -15,6 +15,13 @@ class SinglyLinkedList:
         new_node.next = self.head
         self.head = new_node
 
+    def traverse(self):
+        curr = self.head
+        while curr is not None:
+            print(f"{curr.data} ->", end=" ")
+            curr = curr.next
+        print("None")
+
 sll = SinglyLinkedList()
 sll.insert_at_begin(10)
-
+sll.traverse()
