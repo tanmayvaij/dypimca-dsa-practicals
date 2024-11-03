@@ -10,10 +10,17 @@ class SinglyLinkedList:
         self.head = None
         self.tail = None
 
-    def insert_at_begin(self, data): 
-        new_node = Node(data)
-        new_node.next = self.head
-        self.head = new_node
+    def insert_at_begin(self, data):
+        new_node = Node(data) 
+        if self.head is None:
+            self.head = new_node
+        else:
+            new_node.next = self.head
+            self.head = new_node
+
+    # def insert_at_end(self, data):
+    #     new_node = Node(data)
+    #     self.tail
 
     def traverse(self):
         curr = self.head
