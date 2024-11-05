@@ -26,6 +26,12 @@ class SinglyLinkedList:
             self.tail.next = new_node
             self.tail = new_node
 
+    def delete_from_begin(self):
+        if self.head is Node:
+            print("Empty linked list")
+        else:
+            self.head = self.head.next
+
     def traverse(self):
         curr = self.head
         while curr is not None:
@@ -33,6 +39,7 @@ class SinglyLinkedList:
             curr = curr.next
         print("None")
 
-sll = SinglyLinkedList()
-sll.insert_at_begin(10)
-sll.traverse()
+if __name__ == "__main__":
+    sll = SinglyLinkedList()
+    sll.insert_at_begin(10)
+    sll.traverse()
