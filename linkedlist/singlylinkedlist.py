@@ -32,6 +32,16 @@ class SinglyLinkedList:
         else:
             self.head = self.head.next
 
+    def delete_from_end(self):
+        if self.head is None:
+            print("Empty linked list")
+        else:
+            curr = self.head
+            while curr.next.next:
+                curr = curr.next
+            curr.next = None
+            self.tail = curr
+
     def traverse(self):
         curr = self.head
         while curr is not None:
