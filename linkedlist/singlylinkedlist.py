@@ -35,6 +35,8 @@ class SinglyLinkedList:
     def delete_from_end(self):
         if self.head is None:
             print("Empty linked list")
+        elif self.head.next is None:
+            self.head = self.tail = None
         else:
             curr = self.head
             while curr.next.next:
@@ -52,4 +54,9 @@ class SinglyLinkedList:
 if __name__ == "__main__":
     sll = SinglyLinkedList()
     sll.insert_at_begin(10)
+    sll.insert_at_begin(20)
+    sll.insert_at_begin(30)
+    sll.delete_from_end()
+    sll.delete_from_end()
+    sll.delete_from_end()
     sll.traverse()
