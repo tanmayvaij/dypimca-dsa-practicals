@@ -26,6 +26,20 @@ class SinglyLinkedList:
             self.tail.next = new_node
             self.tail = new_node
 
+    def insert_at_pos(self, data, pos):
+        new_node = Node(data) 
+        if self.head is None:
+            self.head = self.tail = new_node   
+        elif pos == 1:
+            self.insert_at_begin(data)
+        else:
+            i = 1
+            curr = self.head
+            while i < pos - 1:
+                curr = curr.next
+            new_node.next = curr.next
+            curr.next = new_node
+
     def delete_from_begin(self):
         if self.head is Node:
             print("Empty linked list")
@@ -56,7 +70,5 @@ if __name__ == "__main__":
     sll.insert_at_begin(10)
     sll.insert_at_begin(20)
     sll.insert_at_begin(30)
-    sll.delete_from_end()
-    sll.delete_from_end()
-    sll.delete_from_end()
+    sll.insert_at_pos(40, 2)
     sll.traverse()
