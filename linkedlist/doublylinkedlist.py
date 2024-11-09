@@ -22,12 +22,13 @@ class DoublyLinkedList:
         if pos == 1:
             self.insert_at_begin(data)
         else:
-            current = self.head
-            for _ in range(pos - 1):
-                current = current.next
-            new_node.next = current.next
-            new_node.prev = current
-            current.next = new_node
+            curr = self.head
+            for _ in range(1, pos - 1):
+                curr = curr.next
+            new_node.next = curr.next
+            new_node.prev = curr
+            curr.next = new_node
+            new_node.next.prev = new_node
 
     def insert_at_end(self, data):
         new_node = Node(data)
@@ -48,11 +49,13 @@ class DoublyLinkedList:
             self.head.prev = None
 
     def delete_at_pos(self, pos):
-        if pos == 1:
+        if self.head is None: 
+            print("List is empty")
+        elif pos == 1:
             self.delete_at_begin()
         else:
             curr = self.head
-            for _ in range(1,pos-1):
+            for _ in range(1, pos - 1):
                 curr = curr.next
             curr.next = curr.next.next
             curr.next.prev = curr
@@ -100,4 +103,3 @@ if __name__ == "__main__":
     dll.delete_at_pos(2)
     
     dll.traverse()
-
