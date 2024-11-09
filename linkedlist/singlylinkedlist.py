@@ -58,6 +58,18 @@ class SinglyLinkedList:
             curr.next = None
             self.tail = curr
 
+    def delete_from_pos(self, pos):
+        if self.head is None:
+            print("Empty linked list")
+        elif pos == 1:
+            self.delete_from_begin()
+        else:
+            i = 1
+            curr = self.head
+            while i < pos - 1:
+                curr = curr.next
+            curr.next = curr.next.next
+
     def traverse(self):
         curr = self.head
         while curr is not None:
