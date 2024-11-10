@@ -38,6 +38,7 @@ class SinglyLinkedList:
             curr = self.head
             while i < pos - 1:
                 curr = curr.next
+                i += 1
             new_node.next = curr.next
             curr.next = new_node
 
@@ -69,6 +70,7 @@ class SinglyLinkedList:
             curr = self.head
             while i < pos - 1:
                 curr = curr.next
+                i += 1
             curr.next = curr.next.next
 
     def traverse(self):
