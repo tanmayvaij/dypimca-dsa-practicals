@@ -4,6 +4,7 @@ class Node:
         self.data = data
         self.next = None
 
+
 class SinglyLinkedList:
 
     def __init__(self):
@@ -11,7 +12,7 @@ class SinglyLinkedList:
         self.tail = None
 
     def insert_at_begin(self, data):
-        new_node = Node(data) 
+        new_node = Node(data)
         if self.head is None:
             self.head = self.tail = new_node
         else:
@@ -19,7 +20,7 @@ class SinglyLinkedList:
             self.head = new_node
 
     def insert_at_end(self, data):
-        new_node = Node(data) 
+        new_node = Node(data)
         if self.head is None:
             self.head = self.tail = new_node
         else:
@@ -27,9 +28,9 @@ class SinglyLinkedList:
             self.tail = new_node
 
     def insert_at_pos(self, data, pos):
-        new_node = Node(data) 
+        new_node = Node(data)
         if self.head is None:
-            self.head = self.tail = new_node   
+            self.head = self.tail = new_node
         elif pos == 1:
             self.insert_at_begin(data)
         else:
@@ -41,7 +42,7 @@ class SinglyLinkedList:
             curr.next = new_node
 
     def delete_from_begin(self):
-        if self.head is Node:
+        if self.head is None:
             print("Empty linked list")
         else:
             self.head = self.head.next
@@ -76,6 +77,7 @@ class SinglyLinkedList:
             print(f"{curr.data} ->", end=" ")
             curr = curr.next
         print("None")
+
 
 if __name__ == "__main__":
     sll = SinglyLinkedList()
