@@ -2,7 +2,7 @@
 
 from numpy import array, char
 
-watches = array([ "titan", "rolex", "sonata", "fastrack" ])
+watches = array(["titan", "rolex", "sonata", "fastrack"])
 
 ucw = char.upper(watches)
 print(ucw)

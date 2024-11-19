@@ -1,6 +1,6 @@
-# Create a list of heterogeneous type and slice it 
+# Create a list of heterogeneous type and slice it
 
-l1 = [ 1, 2, 3, 4, "a", "b", "c", True, False ]
+l1 = [1, 2, 3, 4, "a", "b", "c", True, False]
 
 print(l1[::])
 

@@ -2,6 +2,7 @@
 
 from array import array
 
-num_arr = array("i", [ 2, 3, 4, 5, 6, 7 ,8 ])
+num_arr = array("i", [2, 3, 4, 5, 6, 7, 8])
 
-for num in num_arr: print(num)
+for num in num_arr:
+    print(num)

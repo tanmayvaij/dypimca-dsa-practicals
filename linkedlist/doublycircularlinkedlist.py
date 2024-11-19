@@ -49,7 +49,7 @@ class DoublyCircularLinkedList:
             self.insert_at_begin(data)
         else:
             curr = self.head
-            for _ in range(1, pos-1):
+            for _ in range(1, pos - 1):
                 curr = curr.next
             new_node.next = curr.next
             new_node.next.prev = new_node
@@ -88,10 +88,10 @@ class DoublyCircularLinkedList:
             self.delete_from_begin()
         else:
             curr = self.head
-            for _ in range(1, pos-1):
-                curr = curr.next   
-            curr.next = curr.next.next 
-            curr.next.prev = curr 
+            for _ in range(1, pos - 1):
+                curr = curr.next
+            curr.next = curr.next.next
+            curr.next.prev = curr
 
     def traverse(self):
         curr = self.head
@@ -111,12 +111,12 @@ if __name__ == "__main__":
     dcll.insert_at_end(50)
     dcll.insert_at_end(60)
     dcll.insert_at_end(70)
-    
+
     dcll.insert_at_pos(66, 3)
 
     dcll.delete_from_begin()
     dcll.delete_from_begin()
 
     dcll.delete_from_end()
-    
+
     dcll.traverse()

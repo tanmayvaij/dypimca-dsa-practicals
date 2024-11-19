@@ -2,7 +2,7 @@ class Stack:
 
     def __init__(self, size):
         self.top = -1
-        self.stack = [ None for _ in range(size)  ]
+        self.stack = [None for _ in range(size)]
         self.size = size
 
     def push(self, data):

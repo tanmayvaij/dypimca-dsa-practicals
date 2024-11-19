@@ -1,8 +1,8 @@
-# Use the append and remove function in the numeric array 
+# Use the append and remove function in the numeric array
 
 from array import array
 
-arr = array("i", [ 2, 3, 4, 5, 6, 7, 8 ])
+arr = array("i", [2, 3, 4, 5, 6, 7, 8])
 print(arr)
 
 arr.append(9)

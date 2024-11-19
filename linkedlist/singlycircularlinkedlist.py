@@ -42,7 +42,7 @@ class SinglyCircularLinkedList:
             self.insert_at_begin(data)
         else:
             curr = self.head
-            for _ in range(1, pos-1):
+            for _ in range(1, pos - 1):
                 curr = curr.next
             new_node.next = curr.next
             curr.next = new_node
@@ -77,9 +77,9 @@ class SinglyCircularLinkedList:
             self.delete_from_begin()
         else:
             curr = self.head
-            for _ in range(1, pos-1):
-                curr = curr.next   
-            curr.next = curr.next.next  
+            for _ in range(1, pos - 1):
+                curr = curr.next
+            curr.next = curr.next.next
 
     def traverse(self):
         curr = self.head
@@ -99,12 +99,12 @@ if __name__ == "__main__":
     scll.insert_at_end(50)
     scll.insert_at_end(60)
     scll.insert_at_end(70)
-    
+
     scll.insert_at_pos(66, 3)
 
     scll.delete_from_begin()
     scll.delete_from_begin()
 
     scll.delete_from_end()
-    
+
     scll.traverse()

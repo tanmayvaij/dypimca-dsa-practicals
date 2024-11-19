@@ -2,8 +2,8 @@
 
 from numpy import array
 
-product_name = array([ "titan-watch", "rolex-watch", "sonata-watch", "fastrack-watch" ])
-product_price = array([ 2000, 3000, 4000, 5000 ])
+product_name = array(["titan-watch", "rolex-watch", "sonata-watch", "fastrack-watch"])
+product_price = array([2000, 3000, 4000, 5000])
 
 for i in range(4):
     statement = product_name[i] + ": $" + str(product_price[i])

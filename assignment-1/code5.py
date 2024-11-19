@@ -1,6 +1,6 @@
 # Create a program for list of strings and sort in ascending and descending order
 
-charlist = [ "telegram", "uber", "amazon", "iphone" ]
+charlist = ["telegram", "uber", "amazon", "iphone"]
 print(charlist)
 
 charlist.sort()
