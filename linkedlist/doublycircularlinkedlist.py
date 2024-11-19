@@ -96,7 +96,7 @@ class DoublyCircularLinkedList:
     def traverse(self):
         curr = self.head
         while curr.next is not self.head:
-            print(f"{curr.data} -> ", end=" ")
+            print(f"{curr.data} <-> ", end=" ")
             curr = curr.next
         print(curr.data)
 
